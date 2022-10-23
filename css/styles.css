@@ -793,7 +793,7 @@ color: #FFFFFF;
     width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
@@ -822,8 +822,17 @@ color: #FFFFFF;
     padding: 0;
     cursor: pointer;
 }
-.modal-close-icon:hover, .modal-close-icon:focus {
-    color: var(--accent-color);
+.modal-close-icon {
+    position: absolute;
+    fill: var(--maine-text-color);
+}
+.modal:focus-within .modal-btn,
+.modal:hover {
+    border: 1px solid var(--accent-color);
+}
+.modal:focus-within .modal-close-icon,
+.modal:hover {
+    fill: var(--accent-color);
 }
 .modal-title {
     font-size: 20px;
