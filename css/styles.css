@@ -834,8 +834,8 @@ fill: var(--maine-text-color);
     border: 1px solid var(--accent-color);
 }
 
-.modal-btn:focus-within .modal-close-icon,
-.modal-btn:hover {
+.footer-input:focus-within .modal-close-icon,
+.footer-input:hover {
     fill: var(--accent-color);
 }
 
