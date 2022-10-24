@@ -834,8 +834,8 @@ fill: var(--maine-text-color);
     border: 1px solid var(--accent-color);
 }
 
-.footer-input:focus-within .modal-close-icon,
-.footer-input:hover {
+.modal-btn:focus-within .modal-close-icon,
+.modal-btn:hover {
     fill: var(--accent-color);
 }
 
@@ -883,8 +883,8 @@ fill: var(--maine-text-color);
 .modal-input:hover {
     border-color:  var(--accent-color);
 }
-.form-field:focus-within  + .modal-input-icon,
-.form-field:hover .modal-input-icon {
+.modal-input:focus-within  + .modal-input-icon,
+.modal-input:hover .modal-input-icon {
     fill: var(--accent-color);
 }
 
