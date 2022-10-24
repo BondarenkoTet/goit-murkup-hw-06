@@ -793,7 +793,7 @@ color: #FFFFFF;
     width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
@@ -826,14 +826,19 @@ color: #FFFFFF;
     position: absolute;
     fill: var(--maine-text-color);
 }
-.modal:focus-within .modal-btn,
-.modal:hover {
+.modal-wrap:focus-within .modal-input {
+fill: var(--maine-text-color);
+}
+.modal-btn:focus-within ,
+.modal-btn:hover {
     border: 1px solid var(--accent-color);
 }
-.modal:focus-within .modal-close-icon,
-.modal:hover {
+
+.modal-btn:focus-within .modal-close-icon,
+.modal-btn:hover {
     fill: var(--accent-color);
 }
+
 .modal-title {
     font-size: 20px;
     font-weight: 700;
@@ -860,13 +865,29 @@ color: #FFFFFF;
     line-height: 1.16;
     outline: transparent;
     padding-left: 42px;
+    cursor: pointer;
+    position: relative;
+    
 }
-.modal-input:focus {
+.modal-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    cursor: pointer;
+    fill: var(--maine-text-color);
+
+}
+
+.modal-input:focus-within  ,
+.modal-input:hover {
     border-color:  var(--accent-color);
 }
-.modal-input:focus +.modal-input-icon {
+.form-field:focus-within  + .modal-input-icon,
+.form-field:hover .modal-input-icon {
     fill: var(--accent-color);
 }
+
 .form-field {
     display: block;
     margin-bottom: 10px ;
@@ -881,15 +902,8 @@ color: #FFFFFF;
 }
 .input-wrap {
 position: relative;
-
 }
-.modal-input-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
 
-}
 .modal-coment {
     width: 100%;
     height: 135px;
