@@ -829,7 +829,7 @@ color: #FFFFFF;
 .modal-wrap:focus-within .modal-input {
 fill: var(--maine-text-color);
 }
-.modal-btn:focus-within ,
+.modal-btn:focus ,
 .modal-btn:hover {
     border: 1px solid var(--accent-color);
 }
@@ -883,7 +883,7 @@ fill: var(--maine-text-color);
 .modal-input:hover {
     border-color:  var(--accent-color);
 }
-.modal-input:focus-within  + .modal-input-icon,
+.modal-input:focus-within   .modal-input-icon,
 .modal-input:hover .modal-input-icon {
     fill: var(--accent-color);
 }
