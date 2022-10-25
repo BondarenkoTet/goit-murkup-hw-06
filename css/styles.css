@@ -489,6 +489,13 @@ color: #FFFFFF;
 }
 .clients-title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.23;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
 }
 
 .clients-soc-link {
@@ -749,6 +756,7 @@ color: #FFFFFF;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
     cursor: pointer;
+    padding-left: 16px;
 
     
 }
@@ -821,22 +829,18 @@ color: #FFFFFF;
     justify-content: center;
     padding: 0;
     cursor: pointer;
+    transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function)
 }
 .modal-close-icon {
     position: absolute;
-    fill: var(--maine-text-color);
+    fill: currentColor;
 }
-.modal-wrap:focus-within .modal-input {
-fill: var(--maine-text-color);
-}
+
 .modal-btn:focus ,
 .modal-btn:hover {
     border: 1px solid var(--accent-color);
-}
-
-.modal-btn:focus-within .modal-close-icon,
-.modal-btn:hover {
-    fill: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .modal-title {
@@ -845,7 +849,7 @@ fill: var(--maine-text-color);
     line-height: 1.15;
     text-align: center;
     color: #212121;
-    margin-bottom:10px;
+    margin-bottom: 12px;
     
 }
 
@@ -857,7 +861,7 @@ fill: var(--maine-text-color);
 }
 .modal-input {
     width: 100%;
-    height: 30px;
+    height: 40px;
     border: 1px solid;
     border-radius: 6px;
     font-size: 12px;
@@ -867,6 +871,8 @@ fill: var(--maine-text-color);
     padding-left: 42px;
     cursor: pointer;
     position: relative;
+    transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function)
     
 }
 .modal-input-icon {
@@ -879,12 +885,11 @@ fill: var(--maine-text-color);
 
 }
 
-.modal-input:focus-within  ,
-.modal-input:hover {
-    border-color:  var(--accent-color);
+.modal-input:focus  {
+    border: 1px solid var(--accent-color);
 }
-.modal-input:focus-within   .modal-input-icon,
-.modal-input:hover .modal-input-icon {
+
+.modal-input:focus +.modal-input-icon {
     fill: var(--accent-color);
 }
 
@@ -896,8 +901,9 @@ fill: var(--maine-text-color);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    letter-spacing: 0.01em;
     color: var(--maine-text-color);
-    padding: 5px;
+    margin-bottom: 4px;
     display: block;
 }
 .input-wrap {
@@ -906,12 +912,13 @@ position: relative;
 
 .modal-coment {
     width: 100%;
-    height: 135px;
+    height: 120px;
     border: 1px solid var(--maine-text-color);
     border-radius:6px ;
     resize: none;
     padding: 10px;
     outline: transparent;
+    transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .modal-coment:focus {
